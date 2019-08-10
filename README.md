@@ -30,8 +30,13 @@ cdk --version
 ```
 
 
-### Usage
-First, activate the virtualenv for later actions:
+### VPC Demo
+First, cd to the vpc folder
+```
+cd vpc
+```
+
+Activate the virtualenv for later actions:
 ```
 source .env/bin/activate
 ```
