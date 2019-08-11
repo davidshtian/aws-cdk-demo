@@ -12,3 +12,4 @@ class VpcStack(core.Stack):
         # The code that defines your stack goes here
         vpc = ec2.Vpc(self, "VPC", cidr=self.node.try_get_context("cidr"), subnet_configuration=[{"cidrMask": 24, "name": "ingress", "subnetType": ec2.SubnetType.PUBLIC}, {
                       "cidrMask": 24, "name": "application", "subnetType": ec2.SubnetType.PRIVATE}], max_azs=int(self.node.try_get_context("azs")))
+

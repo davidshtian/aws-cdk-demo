@@ -75,4 +75,3 @@ cdk deploy -c cidr=12.0.0.0/16 -c azs 1
 - The default AWS region used is us-east-2.
 
 - Now the actual max AZ taken effect is 2, even you set it much more tha 2 (like 99). Might be the issue for aws-cdk Python.
-
